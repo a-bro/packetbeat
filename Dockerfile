@@ -9,7 +9,7 @@ RUN apt-get -y -q install libpcap0.8 wget
 RUN wget https://download.elastic.co/beats/packetbeat/${FILENAME}
 RUN tar zxvf ${FILENAME}
 
-WORKDIR packetbeat-${VERSION}
+WORKDIR packetbeat-${VERSION}-${ARCH}
 ADD packetbeat.yml packetbeat.yml
 
 CMD ["./packetbeat", "-e", "-c=packetbeat.yml"]
