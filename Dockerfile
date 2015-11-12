@@ -1,6 +1,6 @@
 FROM phusion/baseimage:latest
 
-ENV VERSION=1.0.0-beta2 ARCH=x86_64 EXTENSION=tar.gz
+ENV VERSION=1.0.0-rc1 ARCH=x86_64 EXTENSION=tar.gz
 ENV FILENAME=packetbeat-${VERSION}-${ARCH}.${EXTENSION}
 
 RUN apt-get update
